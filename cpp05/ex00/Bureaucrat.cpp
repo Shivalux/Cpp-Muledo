@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 13:28:14 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 22:55:53 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Bureaucrat::Bureaucrat(Bureaucrat &src)
 
 Bureaucrat::~Bureaucrat(void)
 {
-	std::cout << "(Bureaucrat) Deconstructor is called." << std::endl;
+	std::cout << "(Bureaucrat) Destructorr is called." << std::endl;
 }
 
 Bureaucrat	&Bureaucrat::operator=(Bureaucrat &rhs)

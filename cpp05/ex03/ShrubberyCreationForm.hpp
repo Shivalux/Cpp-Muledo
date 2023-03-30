@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/23 23:47:21 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 11:54:40 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 21:02:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ class ShrubberyCreationForm : public AForm
 		ShrubberyCreationForm	&operator=(ShrubberyCreationForm &rhs);
 		void	beSigned(Bureaucrat &bureaucrat);
 		void	execute(Bureaucrat const &bureaucrat) const;
+		AForm	*clone(void);
 	
 	private:
 		std::string	_taget;

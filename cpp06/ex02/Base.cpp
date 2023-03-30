@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/27 16:17:18 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/27 17:18:10 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,5 +14,5 @@
 
 Base::~Base(void)
 {
-	std::cout << "(Base) Deconstructor is called." << std::endl;
+	std::cout << "(Base) Destructorr is called." << std::endl;
 }

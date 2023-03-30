@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 11:12:39 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 23:59:30 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 16:04:30 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -96,8 +96,9 @@ int main(void)
 	MutantStack<int>	copyAssign;
 	std::cout << "(line:97) copyAssign     " << copyAssign << std::endl;
 	copyAssign = mStackInt;
-	std::cout << "(line:99) mStackInt      " << copyAssign << std::endl;
+	std::cout << "(line:99) mStackInt      " << mStackInt << std::endl;
 	std::cout << "(line:100) copyAssign     " << copyAssign << std::endl;
-	std::cout << "(line:101) copyConstrutor " << copyAssign << std::endl;
+	std::cout << "(line:101) copyConstrutor " << copyConsturtor << std::endl;
+
 	return (0);
 }

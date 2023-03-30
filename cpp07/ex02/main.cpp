@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/11/03 21:25:56 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 18:30:19 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 17:57:02 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,10 +75,13 @@ int main(void)
 	}
 	std::cout << "(line:77) numbers[" << &numbers << "] --> " << numbers << std::endl;
 	std::cout << "=========  CopyAssignment-Test =========" <<std::endl;
-	Array<int> CopyNumber(MAX_VAL);
-	CopyNumber = numbers;
-	std::cout << "(line:80) numbers   [" << &numbers << "] --> " << numbers << std::endl;
-	std::cout << "(line:81) CopyNumber[" << &CopyNumber << "] --> " << CopyNumber << std::endl;
+	Array<int>	CopyConstruct(numbers);
+	Array<int>	CopyAssign(MAX_VAL);
+	CopyAssign = numbers;
+	numbers[0] = 440;
+	std::cout << "(line:80) numbers      [" << &numbers[0] << "] --> " << numbers << std::endl;
+	std::cout << "(line:81) CopyAssign   [" << &CopyAssign[0] << "] --> " << CopyAssign << std::endl;
+	std::cout << "(line:81) CopyConstruct[" << &CopyConstruct[0] << "] --> " << CopyConstruct << std::endl;
 	delete [] mirror;
 	return (0);
 }

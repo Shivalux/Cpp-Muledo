@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 00:40:38 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ ClapTrap::ClapTrap(ClapTrap &src) : _name(src._name), _hitPoints(src._hitPoints)
 
 ClapTrap::~ClapTrap(void)
 {
-	std::cout << "(ClapTrap) Destructor is called." << std::endl;
+	std::cout << "(ClapTrap) Destructorr is called." << std::endl;
 }
 
 ClapTrap	&ClapTrap::operator=(ClapTrap const &rhs)

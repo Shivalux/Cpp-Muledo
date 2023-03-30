@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 19:21:36 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ WrongCat::WrongCat(WrongCat &src)
 
 WrongCat::~WrongCat(void)
 {
-	std::cout << "(WrongCat) Destructor is called." << std::endl;
+	std::cout << "(WrongCat) Destructorr is called." << std::endl;
 }
 
 WrongCat	&WrongCat::operator=(WrongCat &rhs)

@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 20:22:10 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Dog::Dog(Dog &src)
 
 Dog::~Dog(void)
 {
-	std::cout << "(Dog) Destructor is called." << std::endl;
+	std::cout << "(Dog) Destructorr is called." << std::endl;
 	delete this->_brain;
 }
 

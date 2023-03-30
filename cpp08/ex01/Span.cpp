@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/29 20:54:31 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 10:57:10 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 19:45:21 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,6 @@ Span::Span(Span const &src)
 	std::list<int>::iterator	count;
 
 	std::cout << "(Span) Copy consturctor is called." << std::endl;
-	this->_n = src._n;
 	*this = src; 
 }
 

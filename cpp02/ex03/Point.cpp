@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/13 20:29:00 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ Point::Point(Point const &src) : _x(src._x), _y(src._y)
 
 Point::~Point(void)
 {
-	// std::cout << "(Point) Destructor is called" << std::endl;
+	// std::cout << "(Point) Destructorr is called" << std::endl;
 }
 
 Fixed	Point::getXPoint(void) const

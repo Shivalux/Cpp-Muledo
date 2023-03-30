@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 12:36:23 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 22:15:13 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 16:02:08 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,6 @@ template< typename T >
 MutantStack<T>::MutantStack(MutantStack<T> const &src) : std::stack<T>(src)
 {
 	// std::cout << "(MutantStack) Copy constructor is called." << std::endl;
-	// this = src._stackValue;
 }
 
 template< typename T >
@@ -37,7 +36,7 @@ MutantStack<T>::~MutantStack(void)
 // 	std::cout << "(MutantStack) Copy assignment operator is called." << std::endl;
 // 	if (this != &rhs)
 // 	{
-// 		// MutantStack<T>(rhs);
+// 		// this = new MutantStack<T>(rhs);
 // 	}
 // 	return (*this);
 // }
@@ -83,7 +82,7 @@ MutantStack<T>::iterator::iterator(T *pointer)
 template< typename T >
 MutantStack<T>::iterator::~iterator(void)
 {
-	// std::cout << "(iterator) Deconstructor is called." << std::endl;
+	// std::cout << "(iterator) Destructor is called." << std::endl;
 }
 
 template< typename T >

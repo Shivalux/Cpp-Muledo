@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/30 11:37:54 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 22:15:19 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 15:39:56 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,6 @@ class MutantStack : public virtual std::stack<T>
 		MutantStack(void);
 		MutantStack(MutantStack const &src);
 		~MutantStack(void);
-		// MutantStack	&operator=(MutantStack const &rhs);
 		T	*begin(void);
 		T	*end(void);
 		class iterator {

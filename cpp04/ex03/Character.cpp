@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 18:02:23 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,7 @@ Character::Character(Character &src)
 
 Character::~Character(void)
 {
-	// std::cout << "(Character) Deconstructor is called." << std::endl;
+	// std::cout << "(Character) Destructorr is called." << std::endl;
 	for (int i = 0; i < 4; i++)
 	{
 		if (this->_slot[i] != NULL)

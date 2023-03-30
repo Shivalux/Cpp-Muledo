@@ -6,18 +6,19 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/28 07:48:25 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/29 00:42:17 by sharnvon         ###   ########.fr       */
+/*   Updated: 2023/03/28 10:16:21 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef ARRAY_HPP
 # define ARRAY_HPP
 
+# include<iostream>
 template< typename T >
 class Array
 {
 	public:
-		Array<T>(void) : _size(0)// _array(new T[0] ())
+		Array<T>(void) : _size(0)
 		{	
 			std::cout << "Defualt constructor is called." << std::endl;
 			_array = new T[0] ();
@@ -37,7 +38,7 @@ class Array
 		}
 		~Array<T>(void)
 		{
-			std::cout << "Deconstructor is called." << std::endl;
+			std::cout << "Destructorr is called." << std::endl;
 			try
 			{
 				delete [] _array;

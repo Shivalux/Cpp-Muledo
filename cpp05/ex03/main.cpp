@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/21 14:12:19 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 20:37:49 by sharnvon         ###   ########.fr       */
+/*   Updated: 2023/03/28 09:59:10 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -80,5 +80,6 @@ int main(void)
 	std::cout << "(line:80) " << bureaucratA << std::endl;
 	std::cout << "(line:81) " << intern << std::endl;
 	std::cout << std::endl;
+	Intern	a(intern);
 	return (0);
 }

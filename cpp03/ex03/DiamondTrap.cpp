@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 22:23:37 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2023/03/02 02:53:16 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ DiamondTrap::DiamondTrap(DiamondTrap &src)
 
 DiamondTrap::~DiamondTrap(void)
 {
-	std::cout << "(DiamondTrap) Deconstructor is called." << std::endl;
+	std::cout << "(DiamondTrap) Destructorr is called." << std::endl;
 }
 
 DiamondTrap	&DiamondTrap::operator=(DiamondTrap &rhs)

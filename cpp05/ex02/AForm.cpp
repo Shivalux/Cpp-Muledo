@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 23:21:26 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ AForm::AForm(AForm &src)
 
 AForm::~AForm(void)
 {
-	std::cout << "(AForm) Deconstructor is called." << std::endl;
+	std::cout << "(AForm) Destructorr is called." << std::endl;
 }
 
 AForm	&AForm::operator=(AForm const &rhs)

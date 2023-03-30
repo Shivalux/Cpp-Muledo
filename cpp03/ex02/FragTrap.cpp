@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 20:52:05 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ FragTrap::FragTrap(FragTrap &src)
 
 FragTrap::~FragTrap(void)
 {
-	std::cout << "(FragTrap) Deconstructor is called." << std::endl;
+	std::cout << "(FragTrap) Destructorr is called." << std::endl;
 }
 
 FragTrap	&FragTrap::operator=(FragTrap &rhs)

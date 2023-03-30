@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 16:11:06 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ AMateria::AMateria(AMateria &src)
 
 AMateria::~AMateria(void)
 {
-	// std::cout << "(AMateria) Deconstructor is called." << std::endl;
+	// std::cout << "(AMateria) Destructorr is called." << std::endl;
 }
 
 AMateria	&AMateria::operator=(AMateria &rhs)

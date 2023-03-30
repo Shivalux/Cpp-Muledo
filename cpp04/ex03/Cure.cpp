@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 17:49:01 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Cure::Cure(void) : AMateria("cure")
 
 Cure::~Cure(void)
 {
-	// std::cout << "(Cure) Deconstructor is called." << std::endl;
+	// std::cout << "(Cure) Destructorr is called." << std::endl;
 }
 
 Cure	*Cure::clone(void) const

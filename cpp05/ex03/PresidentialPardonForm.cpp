@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/24 09:42:19 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ PresidentialPardonForm::PresidentialPardonForm(PresidentialPardonForm &src)
 
 PresidentialPardonForm::~PresidentialPardonForm(void)
 {
-	std::cout << "(PresidentialPardonForm) Deconstructor is called." << std::endl;
+	std::cout << "(PresidentialPardonForm) Destructorr is called." << std::endl;
 }
 
 PresidentialPardonForm	&PresidentialPardonForm::operator=(PresidentialPardonForm &rhs)

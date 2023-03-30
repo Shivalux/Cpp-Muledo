@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 22:50:32 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/19 16:43:07 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ Brain::Brain(Brain &src)
 
 Brain::~Brain(void)
 {
-	std::cout << "(Brain) Deconstructor is called." << std::endl;
+	std::cout << "(Brain) Destructorr is called." << std::endl;
 }
 // return empty string //
 std::string	&Brain::getIdea(int index)

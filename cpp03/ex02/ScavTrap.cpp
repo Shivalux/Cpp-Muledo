@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/15 16:01:39 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ ScavTrap::ScavTrap(ScavTrap &src)
 
 ScavTrap::~ScavTrap(void)
 {
-	std::cout << "(ScavTrap) Destructor is called." << std::endl;
+	std::cout << "(ScavTrap) Destructorr is called." << std::endl;
 }
 
 ScavTrap	&ScavTrap::operator=(ScavTrap &rhs)

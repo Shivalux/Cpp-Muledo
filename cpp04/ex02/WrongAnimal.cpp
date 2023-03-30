@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/17 18:53:24 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ WrongAnimal::WrongAnimal(WrongAnimal &src)
 
 WrongAnimal::~WrongAnimal(void)
 {
-	std::cout << "(WrongAnimal) Destructor is called." << std::endl;
+	std::cout << "(WrongAnimal) Destructorr is called." << std::endl;
 }
 
 WrongAnimal	&WrongAnimal::operator=(WrongAnimal &rhs)

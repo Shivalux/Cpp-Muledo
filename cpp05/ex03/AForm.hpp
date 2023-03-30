@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 22:31:29 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 12:23:55 by sharnvon         ###   ########.fr       */
+/*   Updated: 2023/03/28 09:55:11 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,10 +40,10 @@ class AForm
 		int				getGradeSign(void) const;
 		int				getGradeExec(void) const;
 		void			setSigned(bool sign);
+		// virtual AForm	*clone(void) = 0;
 		class GradeisOutOFRange : public std::exception {
 			public:
 				virtual	const char * what() const throw () {
-					
 					return (" >>ERROR: Requirement is out of range, (hint) range must between 1 to 150.");
 				}
 		};

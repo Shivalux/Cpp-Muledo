@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/22 23:21:26 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/30 23:15:38 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ Form::Form(Form &src)
 
 Form::~Form(void)
 {
-	std::cout << "(Form) Deconstructor is called." << std::endl;
+	std::cout << "(Form) Destructorr is called." << std::endl;
 }
 
 Form	&Form::operator=(Form const &rhs)

@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/24 15:45:44 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 20:22:22 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +36,7 @@ Intern::Intern(Intern &src)
 
 Intern::~Intern(void)
 {
-	std::cout << "(Intern) Deconstructor is called." << std::endl;
+	std::cout << "(Intern) Destructorr is called." << std::endl;
 	for (int i = 0; i < _count; i++)
 	{
 		try

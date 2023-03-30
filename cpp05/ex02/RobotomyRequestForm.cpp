@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/24 08:26:19 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,7 @@ RobotomyRequestForm::RobotomyRequestForm(RobotomyRequestForm &src)
 
 RobotomyRequestForm::~RobotomyRequestForm(void)
 {
-	std::cout << "(RobotomyRequestForm) Deconstructor is called." << std::endl;
+	std::cout << "(RobotomyRequestForm) Destructorr is called." << std::endl;
 }
 
 RobotomyRequestForm	&RobotomyRequestForm::operator=(RobotomyRequestForm &rhs)

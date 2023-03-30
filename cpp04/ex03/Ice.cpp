@@ -6,7 +6,7 @@
 /*   By: sharnvon <sharnvon@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/12/19 17:16:41 by sharnvon          #+#    #+#             */
-/*   Updated: 2022/12/24 18:29:14 by sharnvon         ###   ########.fr       */
+/*   Updated: 2022/12/31 14:54:31 by sharnvon         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ Ice::Ice(void) : AMateria("ice")
 
 Ice::~Ice(void)
 {
-	// std::cout << "(Ice) Deconstructor is called." << std::endl;
+	// std::cout << "(Ice) Destructorr is called." << std::endl;
 }
 
 Ice *Ice::clone(void) const
