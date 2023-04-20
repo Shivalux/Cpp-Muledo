@@ -62,12 +62,12 @@ static bool	argumentCheck(int argc, char **argv)
 		std::cout << "Error: wrong argument.\n(hint) $> ./btc [file_name.txt]" << std::endl;
 		return (false);
 	}
-	fileType = strrchr(argv[1], '.');
-	if (strncmp(fileType, ".txt", 5))
-	{
-		std::cout << "Error: invalid file type.\n(hint) file type must be \".txt\"." << std::endl;
-		return (false);
-	}
+	// fileType = strrchr(argv[1], '.');
+	// if (!fileType && strncmp(fileType, ".txt", 5))
+	// {
+	// 	std::cout << "Error: invalid file type.\n(hint) file type must be \".txt\"." << std::endl;
+	// 	return (false);
+	// }
 	return (true);
 }
 

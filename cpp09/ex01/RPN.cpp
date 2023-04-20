@@ -12,39 +12,30 @@
 
 #include "RPN.hpp"
 
+#include <unistd.h>
 static std::string	argumentCheck(int argc, char **argv, std::deque<char> &container);
+static int			calculation(std::string RPN);
 
 RPN::RPN(void)
 {
-	std::cout << "[RPN] default constructor is called." << std::endl;
+	// std::cout << "[RPN] default constructor is called." << std::endl;
 }
 
 RPN::RPN(int argc, char ** argv)
 {
 	std::cout << "[RPN] constructor is called." << std::endl;
 	this->_RPN = argumentCheck(argc, argv, this->_IN);
-	this->_result = this->_IN[0] - '0';
-	for (int i = 1; this->_IN[i]; ++i)
-	{
-		if (this->_IN[i] == '+')
-			this->_result += this->_IN[++i] - '0';
-		else if (this->_IN[i] == '-')
-			this->_result -= this->_IN[++i] - '0';
-		else if (this->_IN[i] == '*')
-			this->_result *= this->_IN[++i] - '0';
-		else if (this->_IN[i] == '/')
-			this->_result /= this->_IN[++i] - '0';
-	}
+	this->_result = calculation(this->_RPN);
 }
 
 RPN::~RPN(void)
 {
-	std::cout << "[RPN] destructor is called." << std::endl;
+	// std::cout << "[RPN] destructor is called." << std::endl;
 }
 
 RPN::RPN(RPN const &src)
 {
-	std::cout << "[RPN] copy-constrcutor is called." << std::endl;
+	// std::cout << "[RPN] copy-constrcutor is called." << std::endl;
 	this->_RPN = src._RPN;
 	this->_result = src._result;
 	this->_IN = src._IN;
@@ -52,7 +43,7 @@ RPN::RPN(RPN const &src)
 
 RPN	&RPN::operator=(RPN const &rhs)
 {
-	std::cout << "[RPN] copy-assignment operator is called." <<std::endl;
+	// std::cout << "[RPN] copy-assignment operator is called." <<std::endl;
 	if (this != &rhs)
 	{
 		this->_RPN = rhs._RPN;
@@ -97,7 +88,7 @@ static std::string	argumentCheck(int argc, char **argv, std::deque<char> &contai
 
 	if (argc != 2)
 		throw (RPN::InvalidArguments());
-	for (int i = 0; i < argv[1][i]; i++)
+	for (int i = 0; argv[1][i]; i++)
 	{
 		if (isdigit(argv[1][i]))
 		{
@@ -129,6 +120,40 @@ static std::string	argumentCheck(int argc, char **argv, std::deque<char> &contai
 		 	throw (RPN::InvalidFomatArguments());
 	}
 	if (countDigit < 2 || countOperator < 1 || countDigit != countOperator + 1)
+	{
 		throw (RPN::InvalidFomatArguments());
+	}
 	return (result);
+}
+
+static int	calculation(std::string RPN)
+{
+	std::deque<int>	container;
+	int				position;
+
+	for (int i = 0; RPN[i]; ++i)
+	{
+		if (isdigit(RPN[i]))
+		{
+			container.push_back(RPN[i] - '0');
+			container.push_back(std::numeric_limits<int>::min());
+		}
+		else if (strchr("+-*/", RPN[i]))
+		{
+			position = container.size() - 2;
+			for (;position >= 0 && container[position] !=  std::numeric_limits<int>::min(); --position);
+			if (RPN[i] == '+')
+				container[position] = (container[position - 1]) + (container[position + 1]);
+			else if (RPN[i] == '-')
+				container[position] = (container[position - 1]) - (container[position + 1]);
+			else if (RPN[i] == '*')
+				container[position] = (container[position - 1]) * (container[position + 1]);
+			else if (RPN[i] == '/')
+				container[position] = (container[position - 1]) / (container[position + 1]);
+			container[position];
+			container.erase(container.begin() + (position + 1));
+			container.erase(container.begin() + (position - 1));
+		}
+	}
+	return (container[0]);
 }
